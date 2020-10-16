@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>
+      People of Uttarakhand
+    </title>
+
+
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="css/demo.css" />
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+   
+    
+    
+  </head>
+
+  <body>
+    <div class="meny">
+      <h2>More Options</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/Art and Craft/index.html">Art and Craft</a></li>
+        <li><a href="pages/Food wheel/wheel.html">Food</a></li>
+        <li><a href="http://lab.hakim.se/forkit-js/">Destination</a></li>
+        <li><a href="pages/occupation/ui.html">Occupation</a></li>
+        
+        <li><a href="pages/profile card/index.html">Contact Me</a></li>
+      
+      </ul>
+    </div>
+
+    <div class="meny-arrow"></div>
+
+    <div class="contents">
+     
+        <h1><b>People Of Uttarakhand</b></h1>
+      </br>
+      
+        <b>A PLACE OF PIETY</b>
+        <p>
+          Devbhoomi Uttarakhand, formed in the year of 2000, is a fascinating
+          place to explore the riches of Indian culture,history, and natural
+          beauty.
+        </p>
+        <p>
+          The people of Uttarakhand are known as "Pahadis".It is a multi-ethnic
+          populated state and people are divided into regions, recognized as
+          <em>Kumaoni</em> and <em>Garhwali</em>.
+        </p>
+        <p>
+          Uttarakhand is also home to other ethnic groups like
+          <em>Rung community</em>, <em>Jaunsaries</em>, <em>Tharus</em>,
+          <em>Bokshas</em> and <em>Rajis</em>.
+        </p>
+
+        <small>
+          Created by
+          <a href="https://instagram.com/iamyourescape">@iamyourescape</a>
+        </small>
+      
+
+
+      <div class="container">
+        <div class="card">
+          <div class="imgBx">
+            <img src="img1.jpg" />
+          </div>
+          <div class="content">
+            <h2>GARHWALI</h2>
+            <p>
+             
+              Source: <a href="https://instagram.com/devishreerawat1205">@devishreerawat1205</a></br>
+              <a href="#" class="btn btn-primary stretched-link">Explore More.</a>
+              
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="img2.jpg" />
+          </div>
+          <div class="content">
+            <h2>KUMAONI</h2>
+            <p>
+              
+              Source: <a href="https://instagram.com/_jyotibisht_">@_jyotibisht_</a></br>
+              <a href="#" class="btn btn-primary stretched-link">Explore More.</a>
+              
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="img3.jpg" />
+          </div>
+          <div class="content">
+            <h2>JAUNSARI</h2>
+            <p>
+              Source: <a href="https://instagram.com/_tomar_neharika">@_tomar_neharika</a></br>
+              <a href="#" class="btn btn-primary stretched-link">Explore More.</a>
+            </p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="imgBx">
+            <img src="img4.jpg" />
+          </div>
+          <div class="content">
+            <h2>RUNG</h2>
+            <p>
+              
+              Source: <a href="https://instagram.com/chetan-kapoor_photography">@chetan-kapoor_photography</a> 
+              <a href="#" class="btn btn-primary stretched-link">Explore More.</a>
+            </p> 
+          </div>
+        </div>
+      </div>
+
+   
+
+     
+    </div>
+
+   
+
+    <script src="js/meny.js"></script>
+    <script>
+      // Create an instance of Meny
+      var meny = Meny.create({
+        // The element that will be animated in from off screen
+        menuElement: document.querySelector(".meny"),
+
+        // The contents that gets pushed aside while Meny is active
+        contentsElement: document.querySelector(".contents"),
+
+        // [optional] The alignment of the menu (top/right/bottom/left)
+        position: Meny.getQuery().p || "left",
+
+        // [optional] The height of the menu (when using top/bottom position)
+        height: 200,
+
+        // [optional] The width of the menu (when using left/right position)
+        width: 260,
+
+        // [optional] Distance from mouse (in pixels) when menu should open
+        threshold: 40,
+
+        // [optional] Use mouse movement to automatically open/close
+        mouse: true,
+
+        // [optional] Use touch swipe events to open/close
+        touch: true,
+      });
+
+      // API Methods:
+      // meny.open();
+      // meny.close();
+      // meny.isOpen();
+
+      // Events:
+      // meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
+      // meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
+
+      // Embed an iframe if a URL is passed in
+      if (Meny.getQuery().u && Meny.getQuery().u.match(/^http/gi)) {
+        var contents = document.querySelector(".contents");
+        contents.style.padding = "0px";
+        contents.innerHTML =
+          '<div class="cover"></div><iframe src="' +
+          Meny.getQuery().u +
+          '" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://platform.twitter.com/widgets.js"
+    ></script>
+  </body>
+</html>
